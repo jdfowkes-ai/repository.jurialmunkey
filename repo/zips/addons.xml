@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="repository.jurialmunkey" name="jurialmunkey Alpha Repository" version="3.5" provider-name="jurialmunkey">
+<addons><addon id="repository.jurialmunkey" name="jurialmunkey Alpha Repository" version="3.6" provider-name="jurialmunkey">
     <extension point="xbmc.addon.repository" name="jurialmunkey Alpha Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml</info>
@@ -12,9 +12,9 @@
             <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/nexusrepo/zips/</datadir>
         </dir>
         <dir minversion="20.9.1">
-            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/</datadir>
+            <info compressed="false">https://jdfowkes-ai.github.io/repository.jurialmunkey/omega/zips/addons.xml</info>
+            <checksum>https://jdfowkes-ai.github.io/repository.jurialmunkey/omega/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://jdfowkes-ai.github.io/repository.jurialmunkey/omega/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
