@@ -2,7 +2,11 @@ name: Update Modules
 
 on:
   repository_dispatch:
-    types: update
+    types: [update]
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update:
@@ -32,5 +36,9 @@ jobs:
       - name: Commit packages
         run: |
           git add .
-          git commit -m ":package::bookmark: - Update ${{github.event.client_payload.module}} to ${{github.event.client_payload.tag}}"
+          if git diff --cached --quiet; then
+            echo "No repository changes to commit."
+            exit 0
+          fi
+          git commit -m "Update Kodi repository packages"
           git push
