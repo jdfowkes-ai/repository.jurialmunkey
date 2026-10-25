@@ -1,6 +1,10 @@
+
 name: Update Modules
 
 on:
+  push:
+    branches:
+      - master
   repository_dispatch:
     types: [update]
   workflow_dispatch:
